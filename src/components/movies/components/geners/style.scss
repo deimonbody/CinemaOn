@@ -1,0 +1,101 @@
+.movies-tabs{
+    padding-top:100px;
+    position: relative;
+}
+.gener__button{
+    border-radius:20px;
+    color:white;
+    border:0;
+    background-color: rgb(10, 13, 20) ;
+    align-self:flex-start;
+    padding:15px 30px;
+    font-size:1.1rem;
+    font-weight: 700;
+    
+}
+.geners__title{
+    &::after{
+        display:block;
+        content:"";
+        width:100%;
+        height:0.5px;
+        position:absolute;
+        top: 95.1%;
+        left:0;
+        background-color: rgba(255, 255, 255, 0.2);;
+        z-index:1;
+    }
+    font-size:2.2rem;
+    position: relative;
+}
+.geners__title-text{
+    position:relative;
+    &::before{
+        z-index:2;
+        display:block;
+        content:"";
+        width:100%;
+        height:2px;
+        position:absolute;
+        top:44px;
+        left:0;
+        background-color: rgb(0, 166, 234);
+    }
+}
+
+.movies__menu{
+
+   .szh-menu {
+    color:#fff  !important;
+    background-color: rgb(10, 13, 20) !important;
+    font-size:1.2rem !important;
+    border-radius: 10px;
+    display:grid;
+    grid-template-columns: repeat(3,200px);
+    @media screen and(max-width:767px) {
+        grid-template-columns: repeat(1,200px);
+        max-height:200px;
+        overflow: scroll;
+    }
+
+    }
+   .szh-menu__item{
+    padding:5px 10px;
+    &:hover{
+        background-color: rgb(6, 9, 15) !important;
+    }
+   }
+}
+
+.gener-movies-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    row-gap: 30px;
+    column-gap: 30px;
+
+    @media screen and (max-width:767px) {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        .film-component{
+            max-width:350px;
+            
+        }    
+    }
+   
+}
+.gener-movies__btn{
+    cursor:pointer;
+
+    display:inline-block;
+    text-align: center;
+    padding:10px 25px;
+    color:#fff;
+    &:hover{
+        color:#fff !important;        
+    }
+    align-self:center;
+    border-radius: 10px;
+    font-size:1.1rem;
+    background-color: rgb(10, 13, 20) !important;
+}

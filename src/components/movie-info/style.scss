@@ -1,0 +1,51 @@
+.movie-info-container{
+    padding-top:100px;
+}
+.movie-info-img-block{
+    max-width:300px;
+    border-radius: 10px;
+    flex:0 0 300px;
+    img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+.movie-follow{
+    width:25px;
+    height:25px;
+    cursor:pointer;
+   
+    svg{
+        width:100%;
+        height:100%;
+        transition: all 0.3s ease-in-out;
+    }
+}
+.movie-follow-empty{
+    color:white;
+    &:hover{
+            color: rgb(196, 34, 34);
+    }
+}
+.movie-follow-full{
+    color:rgb(196, 34, 34);
+    fill:rgb(196, 34, 34);
+}
+.movie-info-avarage{
+    svg{
+        fill:rgb(253, 95, 0);
+    }
+}
+.movie-info-icon {
+    svg{
+        width:15px;
+        height:15px;
+    }
+}
+.movie-info-calendar{
+    svg{
+        fill:rgb(0, 166, 234);
+    }
+}
